@@ -1,9 +1,9 @@
 # ExpressMongoCrudServer
 
-mkdir fresh
-cd fresh
-npm init -y
-npm i -g nodemon
-npm install express mongoose cookie-parser body-parser cors dotenv
-create index.js -> add baisc expressJS code
-nodemon index.js
+mkdir fresh <br>
+cd fresh <br>
+npm init -y <br>
+npm i -g nodemon <br>
+npm install express mongoose cookie-parser body-parser cors dotenv <br>
+create index.js -> add baisc expressJS code <br>
+nodemon index.js <br>
