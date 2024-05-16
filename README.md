@@ -1,5 +1,9 @@
 # ExpressMongoCrudServer
 
+## clone or download this repository and type below command in terminal
+``` 
+    npm install
+```
 mkdir fresh <br>
 cd fresh <br>
 npm init -y <br>
