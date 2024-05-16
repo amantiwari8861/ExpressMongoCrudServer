@@ -26,3 +26,6 @@ app.get("/", (req, res) => {
 mongoose.connect(process.env.MONGO_ATLAS_URI)
     .then(() => console.log("Connected with Database"))
     .catch((err) => console.log(err));
+
+const productsRoutes = require('./routes/ProductsRoutes');
+app.use('/api/v1/products', productsRoutes);
