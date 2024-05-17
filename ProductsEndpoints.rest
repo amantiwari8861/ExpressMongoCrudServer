@@ -1,0 +1,70 @@
+#METHOD           Endpoints                          Is Data Required to send ?      what should it will do!
+# get    http://localhost:5000/api/v1/products/           no data(json obj) required   get all products data
+# get    http://localhost:5000/api/v1/products/:id        no data(json obj) required   get a specific product data
+# post   http://localhost:5000/api/v1/products/              data(json obj) required   add a new product
+# put    http://localhost:5000/api/v1/products/:id           data(json obj) required   update a product
+# delete http://localhost:5000/api/v1/products/:id        no data(json obj) required   delete a product
+
+# post   http://localhost:5000/api/v1/products/insertmany data(array of json obj)req.   add many product
+
+# 1.Get all products
+# GET http://localhost:5000/api/v1/products
+
+# 2.Get a specific product
+# GET http://localhost:5000/api/v1/products/3
+
+# 3.Add a product
+
+# POST http://localhost:5000/api/v1/products
+# content-type: application/json
+
+# {
+#     "prid":3,
+#     "name":"iphone 15 pro max",
+#     "price":110000,
+#     "image":"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/k/l/l/-original-imagtc5fz9spysyk.jpeg?q=70&crop=false"
+# }
+
+# 4. update a product (not work with rest client)
+
+# put http://localhost:5000/api/v1/products/3
+
+# {
+#     "prid":4,
+#     "name":"iphone 15 pro",
+#     "price":80000,
+#     "image":"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/k/l/l/-original-imagtc5fz9spysyk.jpeg?q=70&crop=false"
+# }
+
+# 5. delete a specific product
+# delete http://localhost:5000/api/v1/products/4
+
+# 6. add many products in DB
+post http://localhost:5000/api/v1/products/insertmany
+
+[
+    {
+      "prid": "3",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/q/p/q/-original-imagy5wfcgybpq5x.jpeg?q=70&crop=false",
+      "name": "Redmi 45",
+      "price": 4700
+    },
+    {
+      "prid": "4",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/q/p/q/-original-imagy5wfcgybpq5x.jpeg?q=70&crop=false",
+      "name": "Realme note 9",
+      "price": 223332
+    },
+    {
+      "prid": "5",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/q/p/q/-original-imagy5wfcgybpq5x.jpeg?q=70&crop=false",
+      "name": "LG 845",
+      "price": 78328732
+    },
+    {
+      "prid": "6",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/q/p/q/-original-imagy5wfcgybpq5x.jpeg?q=70&crop=false",
+      "name": "iphone 15",
+      "price": "71000"
+    }
+  ]
