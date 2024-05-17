@@ -25,7 +25,7 @@
 #     "image":"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/k/l/l/-original-imagtc5fz9spysyk.jpeg?q=70&crop=false"
 # }
 
-# 4. update a product (not work with rest client)
+# 4. update a product (will not work with rest client)
 
 # put http://localhost:5000/api/v1/products/3
 
@@ -39,7 +39,7 @@
 # 5. delete a specific product
 # delete http://localhost:5000/api/v1/products/4
 
-# 6. add many products in DB
+# 6. add many products in DB (will not work with rest client)
 post http://localhost:5000/api/v1/products/insertmany
 
 [
