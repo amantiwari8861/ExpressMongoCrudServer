@@ -29,3 +29,7 @@ mongoose.connect(process.env.MONGO_ATLAS_URI)
 
 const productsRoutes = require('./routes/ProductsRoutes');
 app.use('/api/v1/products', productsRoutes);
+
+app.get("/*", (req, res) => {
+  res.send("<h1>No Route Found!</h1>");
+});
