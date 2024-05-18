@@ -1,0 +1,375 @@
+Section A: Objective Type Questions (25 Marks)
+Python (5 Marks)
+
+Q 1. Which of the following is a mutable data type in Python?
+a) tuple
+b) list
+c) string
+d) int
+
+Q 2.  What will be the output of the following Python function?
+min(max(False,-3,-4), 2,7)
+a) -4
+b) -3
+c) 2
+d) False
+
+Q 3. What will be the value of the following Python expression?
+4 + 3 % 5
+a) 7
+b) 2
+c) 4
+d) 1
+
+Q What will be the output of the following Python code?
+
+i = 1
+while True:
+    if i%3 == 0:
+        break
+    print(i)
+    i + = 1
+a) 1 2 3
+b) error
+c) 1 2
+d) none of the mentioned
+
+Q 5. What does the following list comprehension do?
+python [x for x in range(5)] 
+a) Creates a list of characters
+b) Creates a list of numbers from 0 to 5
+c) Creates a list of numbers from 0 to 4
+d) Creates an empty list
+
+JavaScript (5 Marks)
+
+Q 6. Which of the following is correct about JavaScript?
+a) JavaScript is an Assembly language
+b) JavaScript is a compiled language
+c) JavaScript is an interpreted language
+d) JavaScript is a machine language
+
+Q 7. What is the output of the following code?
+javascript console.log(typeof null); 
+a) "null"
+b) "undefined"
+c) "object"
+d) "number"
+
+Q 8. Which method is used to add an element at the end of an array in JavaScript?
+a) push()
+b) pop()
+c) shift()
+d) unshift()
+
+Q 9. How do you create a function in JavaScript?
+a) function = myFunction()
+b) function myFunction()
+c) function:myFunction()
+d) function => myFunction()
+
+Q 10. What will be the output of the following code?
+javascript let a = 5; let b = "5"; console.log(a == b); 
+a) true
+b) false
+c) NaN
+d) undefined
+
+React (5 Marks)
+
+Q 11. What is the purpose of the render method in React?
+a) To directly manipulate the DOM
+b) To render a component to the DOM
+c) To update state
+d) To initialize props
+
+Q 12. How do you create a React component using a function?
+a) class MyComponent extends React.Component
+b) function MyComponent() {}
+c) React.createClass({render: function() {}})
+d) React.component(function MyComponent() {})
+
+Q 13. What does JSX stand for?
+a) JavaScript XML
+b) Java Syntax Extension
+c) JavaScript Extension
+d) JavaScript and XML
+
+Q 14. Which of the following is a correct way to pass props in React?
+javascript const MyComponent = (props) => { return <div>{props.name}</div>; } 
+a) <MyComponent name="John" />
+b) <MyComponent props="John" />
+c) <MyComponent: name="John" />
+d) <MyComponent, name="John" />
+
+Q 15. Which hook is used to handle side-effects in functional components in React?
+a) useState
+b) useEffect
+c) useContext
+d) useReducer
+
+Express and MongoDB (5 Marks)
+
+Q 16. Which command is used to install Express.js?
+a) npm install express
+b) npm get express
+c) npm init express
+d) npm start express
+
+Q 17. Which method is used to create a new document in MongoDB using Mongoose?
+a) save()
+b) create()
+c) insert()
+d) add()
+
+Q 18. What is the default port for an Express.js application?
+a) 3000
+b) 4000
+c) 5000
+d) 8000
+
+Q 19. How do you define a schema in Mongoose?
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+const userSchema = new Schema({
+    name: String,
+    age: Number
+});
+const User = mongoose.model('User', userSchema);
+a) Using JSON
+b) Using JavaScript objects
+c) Using XML
+d) Using arrays
+
+Q 20. Which method is used to listen for connections in an Express.js application?
+a) app.connect()
+b) app.listen()
+c) app.bind()
+d) app.run()
+
+Django (5 Marks)
+
+Q 21. Which command is used to create a new Django project?
+a) django-admin startapp mysite
+b) django-admin startproject mysite
+c) django-admin createproject mysite
+d) django-admin createapp mysite
+
+Q 22. Which file is responsible for the URL configuration in a Django project?
+a) settings.py
+b) urls.py
+c) views.py
+d) models.py
+
+Q 23. Which of the following is the correct way to define a model in Django?
+python class Student(models.Model): name = models.CharField(max_length=100) age = models.IntegerField() 
+a) Using a dictionary
+b) Using a list
+c) Using a function
+d) Using a class
+
+Q 24. How do you apply the migrations in Django after defining models?
+a) python manage.py makemigrations
+b) python manage.py migrate
+c) python manage.py runserver
+d) python manage.py startapp
+
+Q 25. Which of the following is used to render a template in Django?
+a) render(request, 'template.html')
+b) render('template.html')
+c) render_template('template.html')
+d) render_html('template.html')
+
+Section B: Subjective Type Questions (30 Marks)
+Python (10 Marks)
+
+Q 1. Explain the concept of list comprehensions in Python with an example. (5 Marks)
+
+Q 2. Write a Python program to read a file and count the number of words in it. (5 Marks)
+
+JavaScript (10 Marks)
+
+Q 3. Explain promises in JavaScript with an example. (5 Marks)
+
+Q 4. Write a JavaScript function to find the factorial of a number using recursion. (5 Marks)
+
+React (5 Marks)
+
+Q 5. Describe the concept of state and props in React with examples. (5 Marks)
+
+Express and MongoDB (5 Marks)
+
+Q 6. Write a basic Express.js route to handle a GET request to fetch all students from a MongoDB collection. (5 Marks)
+
+
+
+
+Answer Key
+Section A: Objective Type Questions
+
+Python
+
+b) list
+c) 25
+b) def
+c) # this is a comment
+c) Creates a list of numbers from 0 to 4
+JavaScript
+
+c) JavaScript is an interpreted language
+c) "object"
+a) push()
+b) function myFunction()
+a) true
+React
+
+b) To render a component to the DOM
+b) function MyComponent() {}
+a) JavaScript XML
+a) <MyComponent name="John" />
+b) useEffect
+Express and MongoDB
+
+a) npm install express
+b) create()
+a) 3000
+b) Using JavaScript objects
+b) app.listen()
+Django
+
+b) django-admin startproject mysite
+b) urls.py
+d) Using a class
+b) python manage.py migrate
+a) render(request, 'template.html')
+Section B: Subjective Type Questions
+
+Python
+
+List comprehensions provide a concise way to create lists. Common applications are to make new lists where each element is the result of some operation applied to each member of another sequence or iterable.
+
+Example:
+
+python
+Copy code
+squares = [x ** 2 for x in range(10)]
+print(squares)  # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+python
+Copy code
+def count_words_in_file(file_path):
+    with open(file_path, 'r') as file:
+        text = file.read()
+        words = text.split()
+        return len(words)
+
+file_path = 'example.txt'
+print(f"Number of words in the file: {count_words_in_file(file_path)}")
+JavaScript
+
+Promises in JavaScript are used to handle asynchronous operations. They allow you to associate handlers with an asynchronous action's eventual success value or failure reason.
+
+Example:
+
+javascript
+Copy code
+let promise = new Promise(function(resolve, reject) {
+    let success = true;
+    if (success) {
+        resolve("Success!");
+    } else {
+        reject("Failure!");
+    }
+});
+
+promise.then(function(value) {
+    console.log(value);  // "Success!"
+}).catch(function(error) {
+    console.log(error);
+});
+javascript
+Copy code
+function factorial(n) {
+    if (n === 0 || n === 1) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+
+console.log(factorial(5));  // Outputs: 120
+React
+
+In React, state and props are two distinct ways to manage data in components.
+
+State:
+
+State is a built-in React object used to contain data or information about the component.
+State can be changed, usually in response to user actions.
+Example:
+
+javascript
+Copy code
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { count: 0 };
+    }
+
+    increment = () => {
+        this.setState({ count: this.state.count + 1 });
+    }
+
+    render() {
+        return (
+            <div>
+                <p>Count: {this.state.count}</p>
+                <button onClick={this.increment}>Increment</button>
+            </div>
+        );
+    }
+}
+Props:
+
+Props (short for properties) are read-only attributes used to pass data from a parent component to a child component.
+Props cannot be modified by the child component.
+Example:
+
+javascript
+Copy code
+function Greeting(props) {
+    return <h1>Hello, {props.name}</h1>;
+}
+
+function App() {
+    return <Greeting name="John" />;
+}
+Express and MongoDB
+
+javascript
+Copy code
+const express = require('express');
+const mongoose = require('mongoose');
+const app = express();
+const port = 3000;
+
+mongoose.connect('mongodb://localhost:27017/school', { useNewUrlParser: true, useUnifiedTopology: true });
+
+const studentSchema = new mongoose.Schema({
+    name: String,
+    age: Number,
+    grade: String
+});
+
+const Student = mongoose.model('Student', studentSchema);
+
+app.get('/students', async (req, res) => {
+    try {
+        const students = await Student.find();
+        res.json(students);
+    } catch (err) {
+        res.status(500).send(err);
+    }
+});
+
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}/`);
+});
