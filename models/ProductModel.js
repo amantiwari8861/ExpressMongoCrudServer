@@ -8,3 +8,5 @@ const productSchema = new mongoose.Schema({
 const Product = mongoose.model('Product', productSchema);
 
 module.exports = Product;
+
+// Model -> interact with Database (or store data that is received/sent from/to backend )
