@@ -4,6 +4,8 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 require('dotenv').config();
+const productsRoutes = require('./routes/ProductsRoutes');
+const usersRoutes = require('./routes/UsersRoutes');
 
 const app = express();
 const port = process.env.SERVER_PORT || 5001;
@@ -24,12 +26,12 @@ app.get("/", (req, res) => {
 });
 
 mongoose.connect(process.env.MONGO_ATLAS_URI)
-    .then(() => console.log("Connected with Database"))
-    .catch((err) => console.log(err));
+  .then(() => console.log("Connected with Database"))
+  .catch((err) => console.log(err));
 
-const productsRoutes = require('./routes/ProductsRoutes');
 app.use('/api/v1/products', productsRoutes);
+app.use('/api/v1/users', usersRoutes);
 
 app.get("/*", (req, res) => {
-  res.send("<h1>No Route Found!</h1>");
+  res.status(404).send("<h1>Page Not Found!</h1>");
 });
